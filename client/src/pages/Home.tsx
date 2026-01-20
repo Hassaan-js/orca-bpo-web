@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Code, Zap, Users, Palette, Search, Home as HomeIcon, Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from "lucide-react";
+import { ArrowRight, Code, Zap, Users, Palette, Search, Home as HomeIcon, Mail, Phone, MapPin, Linkedin, Facebook, Instagram, Music } from "lucide-react";
 import { useState } from "react";
 
 /**
@@ -472,7 +472,7 @@ export default function Home() {
             </p>
             <div className="flex gap-4 mt-4 md:mt-0">
               <a
-                href="https://www.facebook.com/orca.bpo"
+                href="https://www.facebook.com/share/1J89gjts2e/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center text-primary hover:text-primary transition"
@@ -481,7 +481,7 @@ export default function Home() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://www.linkedin.com/company/orca-bpo"
+                href="https://www.linkedin.com/company/orca-enterprises-private-limited/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center text-primary hover:text-primary transition"
@@ -490,13 +490,22 @@ export default function Home() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/orca.bpo"
+                href="https://www.instagram.com/orcabpo545?igsh=MWFia3d4M3Z5NXo4MA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center text-primary hover:text-primary transition"
                 aria-label="Follow Orca BPO on Instagram"
               >
                 <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@orcabpo?_r=1&_t=ZS-93EffrGHWrZ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center text-primary hover:text-primary transition"
+                aria-label="Follow Orca BPO on TikTok"
+              >
+                <Music className="w-5 h-5" />
               </a>
             </div>
           </div>
