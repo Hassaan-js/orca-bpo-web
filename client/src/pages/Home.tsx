@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Code, Zap, Users, Palette, Search, Home as HomeIcon, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowRight, Code, Zap, Users, Palette, Search, Home as HomeIcon, Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from "lucide-react";
 import { useState } from "react";
 
 /**
@@ -470,10 +470,34 @@ export default function Home() {
             <p className="text-muted-foreground text-sm">
               © 2024 BPO Orca Enterprises. All rights reserved.
             </p>
-            <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="text-muted-foreground hover:text-primary transition">Facebook</a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition">LinkedIn</a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition">Twitter</a>
+            <div className="flex gap-4 mt-4 md:mt-0">
+              <a
+                href="https://www.facebook.com/orca.bpo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center text-primary hover:text-primary transition"
+                aria-label="Follow Orca BPO on Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/orca-bpo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center text-primary hover:text-primary transition"
+                aria-label="Follow Orca BPO on LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/orca.bpo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center text-primary hover:text-primary transition"
+                aria-label="Follow Orca BPO on Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
