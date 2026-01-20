@@ -94,9 +94,9 @@ export default function Home() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
         <div className="container flex items-center justify-between h-16 md:h-20">
-          <div className="text-2xl md:text-3xl font-bold text-primary">
-            ORCA
-          </div>
+          <a href="#" className="flex items-center gap-2 hover:opacity-80 transition">
+            <img src="/images/orca-logo.png" alt="Orca BPO Logo" className="h-12 w-auto" />
+          </a>
           <div className="hidden md:flex items-center gap-8">
             <a href="#services" className="text-sm font-medium hover:text-primary transition">Services</a>
             <a href="#about" className="text-sm font-medium hover:text-primary transition">About</a>
@@ -436,7 +436,7 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="font-bold text-lg mb-4">Orca BPO</h4>
+              <img src="/images/orca-logo.png" alt="Orca BPO Logo" className="h-16 w-auto mb-4" />
               <p className="text-muted-foreground text-sm">
                 Leading provider of integrated customer experience and agency solutions.
               </p>
