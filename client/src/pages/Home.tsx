@@ -111,7 +111,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/hero-planet.jpg')",
+            backgroundImage: `url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/nTrtRBvTjGzyxcsJ.jpg')`,
             backgroundAttachment: "fixed",
           }}
         >
@@ -186,7 +186,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/images/about-office.jpg"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/HmvhwFvuWupTiTCk.jpg"
                 alt="Orca BPO Team Collaboration"
                 className="rounded-lg shadow-2xl shadow-primary/20 w-full h-auto"
               />
@@ -262,6 +262,50 @@ export default function Home() {
             </p>
             <p className="text-lg text-primary font-bold">Paul Andrew</p>
             <p className="text-muted-foreground">Client & Business Partner</p>
+          </div>
+        </div>
+      </section>
+
+      {/* CEO Section */}
+      <section className="py-20 md:py-32 bg-card border-t border-border">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* CEO Image */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl blur-3xl"></div>
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/DjzlLFBLjPYgKKoo.jpg"
+                  alt="CEO of Orca BPO"
+                  className="relative w-full max-w-sm rounded-2xl shadow-2xl object-cover"
+                />
+              </div>
+            </div>
+
+            {/* CEO Bio */}
+            <div>
+              <div className="mb-6">
+                <span className="text-sm font-bold text-primary uppercase tracking-widest">Leadership</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Meet Our <span className="text-primary">Visionary Leader</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                With years of industry expertise and a passion for excellence, our CEO leads Orca BPO with a clear vision: to transform businesses through innovative solutions and customer-centric service delivery.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Under his strategic direction, Orca BPO has grown to become a trusted partner for companies seeking integrated customer experience and agency solutions. His commitment to quality, innovation, and client success drives every decision we make.
+              </p>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <p className="font-bold text-xl mb-1">CEO, Orca BPO</p>
+                  <p className="text-muted-foreground">Founder & Visionary</p>
+                </div>
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white w-fit">
+                  Connect With Leadership
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
