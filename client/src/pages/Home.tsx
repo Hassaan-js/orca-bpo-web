@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { ArrowRight, Code, Zap, Users, Palette, Search, Home as HomeIcon, Mail, Phone, MapPin, Linkedin, Facebook, Instagram, Music } from "lucide-react";
 import { useState } from "react";
 
@@ -184,12 +185,41 @@ export default function Home() {
       <section id="about" className="py-20 md:py-32 bg-background">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/HmvhwFvuWupTiTCk.jpg"
-                alt="Orca BPO Team Collaboration"
-                className="rounded-lg shadow-2xl shadow-primary/20 w-full h-auto"
-              />
+            <div className="relative">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9435.jpg"
+                      alt="Team at work - Customer support"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9377.jpg"
+                      alt="Team collaboration and innovation"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9369.jpg"
+                      alt="Team discussion and planning"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9313.jpg"
+                      alt="Team working together"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2" />
+                <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2" />
+              </Carousel>
             </div>
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
