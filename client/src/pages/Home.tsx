@@ -190,29 +190,36 @@ export default function Home() {
                 <CarouselContent>
                   <CarouselItem>
                     <img
-                      src="/images/093a9435.jpg"
+                      src="/images/093a9313.jpg"
                       alt="Team at work - Customer support"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9377.jpg"
+                      src="/images/093a9323.jpg"
                       alt="Team collaboration and innovation"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9369.jpg"
+                      src="/images/093a9344_(1).jpg"
                       alt="Team discussion and planning"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9313.jpg"
+                      src="/images/093a9328.jpg"
                       alt="Team working together"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9307.jpg"
+                      alt="Call center operations"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
