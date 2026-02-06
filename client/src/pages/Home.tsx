@@ -305,7 +305,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl blur-3xl"></div>
                 <img
-                  src="/images/whatsapp_image_2026-01-19_at_9.37.56_pm.jpeg"
+                  src="/images/ceo.jpg"
                   alt="CEO of Orca BPO"
                   className="relative w-full max-w-sm rounded-2xl shadow-2xl object-cover"
                 />
