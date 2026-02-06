@@ -216,6 +216,83 @@ export default function Home() {
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9430.jpg"
+                      alt="Team members collaborating with laptop"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9425.jpg"
+                      alt="Busy office call center environment"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9420.jpg"
+                      alt="Employee working with headset"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9415.jpg"
+                      alt="Customer service representative smiling"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9410.jpg"
+                      alt="Training session with multiple employees"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9405.jpg"
+                      alt="Team meeting and discussion"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9400.jpg"
+                      alt="Female employee working with headset"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9395.jpg"
+                      alt="Team gathered around laptop for discussion"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9390.jpg"
+                      alt="Collaborative learning session"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9385.jpg"
+                      alt="Revup office workspace"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9380.jpg"
+                      alt="Active workplace with focused employees"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2" />
                 <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2" />
