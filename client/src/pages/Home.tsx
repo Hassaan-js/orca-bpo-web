@@ -204,42 +204,42 @@ export default function Home() {
                 <CarouselContent>
                   <CarouselItem>
                     <img
-                      src="/images/093a9313.jpg"
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/SWcDbQmxYtpEFXVP.jpg"
                       alt="Team at work - Customer support"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9323.jpg"
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/ByROIEDOtcifGQUC.jpg"
                       alt="Team collaboration and innovation"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9344_(1).jpg"
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/PWXQIRFETHuSEASG.jpg"
                       alt="Team discussion and planning"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9328.jpg"
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/MlOqSRcIiUSgdoWh.jpg"
                       alt="Team working together"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9307.jpg"
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/NPYERevaVXIiBFYH.jpg"
                       alt="Call center operations"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9430.jpg"
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/LKoqWRrIKtQglYGW.jpg"
                       alt="Team members collaborating with laptop"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
@@ -260,7 +260,7 @@ export default function Home() {
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9415.jpg"
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/HYhikZkMSCotDkYN.jpg"
                       alt="Customer service representative smiling"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
@@ -302,7 +302,7 @@ export default function Home() {
                   </CarouselItem>
                   <CarouselItem>
                     <img
-                      src="/images/093a9385.jpg"
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/ziQGwKdrUyZIbTSn.jpg"
                       alt="Revup office workspace"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
@@ -379,17 +379,35 @@ export default function Home() {
       {/* Testimonial Section */}
       <section className="py-20 md:py-32 bg-background">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="mb-8">
-              <div className="inline-block w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                <span className="text-2xl text-primary">❝</span>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              {/* Testimonial Content */}
+              <div className="text-center md:text-left">
+                <div className="mb-8 flex justify-center md:justify-start">
+                  <div className="inline-block w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                    <span className="text-2xl text-primary">❝</span>
+                  </div>
+                </div>
+                <p className="text-2xl md:text-3xl font-bold mb-6 leading-relaxed">
+                  Having worked with probably three SEO agencies so far, BPO Orca Enterprises stands out as the best. Their contribution has helped us improve conversion rates by making broader business strategy changes.
+                </p>
+                <div>
+                  <p className="text-lg text-primary font-bold">Paul Andrew</p>
+                  <p className="text-muted-foreground">Client & Business Partner</p>
+                </div>
+              </div>
+              {/* Paul Andrew Image */}
+              <div className="flex justify-center">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl blur-3xl"></div>
+                  <img
+                    src="/images/paul-andrew.png"
+                    alt="Paul Andrew - Client Testimonial"
+                    className="relative w-full max-w-sm rounded-2xl shadow-2xl object-cover"
+                  />
+                </div>
               </div>
             </div>
-            <p className="text-2xl md:text-3xl font-bold mb-6 leading-relaxed">
-              Having worked with probably three SEO agencies so far, BPO Orca Enterprises stands out as the best. Their contribution has helped us improve conversion rates by making broader business strategy changes.
-            </p>
-            <p className="text-lg text-primary font-bold">Paul Andrew</p>
-            <p className="text-muted-foreground">Client & Business Partner</p>
           </div>
         </div>
       </section>
