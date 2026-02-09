@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
-import { ArrowRight, Code, Zap, Users, Palette, Search, Home as HomeIcon, Mail, Phone, MapPin, Linkedin, Facebook, Instagram, Music } from "lucide-react";
+import { ArrowRight, Code, Zap, Users, Palette, Search, Home as HomeIcon, Mail, Phone, MapPin, Linkedin, Facebook, Instagram, Music, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 /**
@@ -13,6 +13,7 @@ import { useState } from "react";
  */
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -103,8 +104,21 @@ export default function Home() {
             <a href="#about" className="text-sm font-medium hover:text-primary transition">About</a>
             <a href="#contact" className="text-sm font-medium hover:text-primary transition">Contact</a>
           </div>
-          <Button className="bg-primary hover:bg-primary/90 text-white">Get Started</Button>
+          <button className="md:hidden p-2 hover:bg-primary/10 rounded-lg transition" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
+            {mobileMenuOpen ? <X className="w-6 h-6 text-primary" /> : <Menu className="w-6 h-6" />}
+          </button>
+          <Button className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white">Get Started</Button>
         </div>
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-card border-t border-border">
+            <div className="container py-4 flex flex-col gap-4">
+              <a href="#services" className="text-sm font-medium hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Services</a>
+              <a href="#about" className="text-sm font-medium hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>About</a>
+              <a href="#contact" className="text-sm font-medium hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-2">Get Started</Button>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
