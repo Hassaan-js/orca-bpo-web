@@ -540,8 +540,9 @@ export default function Home() {
                     placeholder="Full Name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none transition text-foreground placeholder-muted-foreground"
+                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition text-foreground placeholder-muted-foreground"
                     required
+                    aria-label="Full Name"
                   />
                 </div>
 
@@ -552,8 +553,9 @@ export default function Home() {
                     placeholder="Email Address"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none transition text-foreground placeholder-muted-foreground"
+                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition text-foreground placeholder-muted-foreground"
                     required
+                    aria-label="Email Address"
                   />
                 </div>
 
@@ -564,7 +566,8 @@ export default function Home() {
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none transition text-foreground placeholder-muted-foreground"
+                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition text-foreground placeholder-muted-foreground"
+                    aria-label="Phone Number"
                   />
                 </div>
 
@@ -575,7 +578,8 @@ export default function Home() {
                     placeholder="Website (Optional)"
                     value={formData.website}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none transition text-foreground placeholder-muted-foreground"
+                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition text-foreground placeholder-muted-foreground"
+                    aria-label="Website"
                   />
                 </div>
 
@@ -584,7 +588,8 @@ export default function Home() {
                     name="employees"
                     value={formData.employees}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none transition text-foreground"
+                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition text-foreground"
+                    aria-label="Company Size"
                   >
                     <option value="">Company Size</option>
                     <option value="1-10">1-10 Employees</option>
@@ -600,7 +605,8 @@ export default function Home() {
                     name="service"
                     value={formData.service}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none transition text-foreground"
+                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition text-foreground"
+                    aria-label="Select Service"
                   >
                     <option value="">Select Service</option>
                     <option value="software">Software Development</option>
