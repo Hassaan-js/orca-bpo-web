@@ -1,17 +1,15 @@
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
-import { ArrowRight, Code, Zap, Users, Palette, Search, Home as HomeIcon, Mail, Phone, MapPin, Linkedin, Facebook, Instagram, Music, Menu, X, CheckCircle, Award, Globe, TrendingUp } from "lucide-react";
+import { ArrowRight, Code, Zap, Users, Palette, Search, Home as HomeIcon, Mail, Phone, MapPin, Linkedin, Facebook, Instagram, Music, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 /**
  * Design System: Premium Dark Tech with Blue Accents
- * SEO & GEO Optimized Content Structure
- * - Clear, factual language without marketing fluff
- * - Proper H2/H3 heading hierarchy for content organization
- * - Service schema markup for each service
- * - FAQ sections for AI search engine optimization
- * - Trust elements and social proof
+ * - Typography: Space Grotesk for headings, Poppins for body
+ * - Colors: Deep navy (#0f172a) background, bright blue (#3b82f6) accents
+ * - Layout: Full-width sections with asymmetric content placement
+ * - Animations: Smooth hover effects, glowing elements, fade-in on scroll
  */
 
 export default function Home() {
@@ -33,6 +31,7 @@ export default function Home() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    // Reset form
     setFormData({ name: "", email: "", phone: "", website: "", employees: "", service: "" });
   };
 
@@ -40,108 +39,57 @@ export default function Home() {
     {
       icon: Code,
       title: "Software Development",
-      description: "Custom software solutions built for reliability and scalability. We develop applications that solve real business problems.",
-      benefits: ["Custom development", "Cloud-ready architecture", "Security-focused design"],
-      link: "#software-development",
+      description: "Smooth, secure, and reliable software solutions tailored to your business needs.",
+      link: "#",
     },
     {
       icon: Zap,
       title: "Digital Marketing",
-      description: "Data-driven marketing strategies that increase visibility and drive conversions. We focus on measurable results.",
-      benefits: ["SEO optimization", "Content strategy", "Campaign management"],
-      link: "#digital-marketing",
+      description: "Maximize revenue with analytics-based marketing strategies and campaigns.",
+      link: "#",
     },
     {
       icon: Users,
       title: "Customer Experience",
-      description: "Professional customer support and engagement solutions. We handle customer interactions with expertise and care.",
-      benefits: ["24/7 support", "Multi-channel support", "Quality assurance"],
-      link: "#customer-experience",
+      description: "Our strong sales profile makes us a preferred BPO partner for CX solutions.",
+      link: "#",
     },
     {
       icon: Palette,
       title: "Branding",
-      description: "Strategic branding that builds customer loyalty and market presence. We create consistent brand experiences.",
-      benefits: ["Brand strategy", "Visual identity", "Market positioning"],
-      link: "#branding",
+      description: "Grow a loyal customer base across digital platforms with strategic branding.",
+      link: "#",
     },
     {
       icon: Search,
       title: "SEO Optimization",
-      description: "Search engine optimization based on proven strategies and best practices. We improve your online visibility.",
-      benefits: ["Keyword research", "On-page optimization", "Link building"],
-      link: "#seo-optimization",
+      description: "Satisfying search engines through facts-based SEO strategies and best practices.",
+      link: "#",
     },
     {
       icon: HomeIcon,
       title: "Real Estate VA",
-      description: "Virtual assistant services for real estate professionals. We handle back-office operations efficiently.",
-      benefits: ["Administrative support", "Lead management", "Data entry"],
-      link: "#real-estate-va",
+      description: "Back office operational support for real estate businesses and professionals.",
+      link: "#",
     },
   ];
 
   const valueProps = [
     {
-      title: "Increase Revenue",
-      description: "We help businesses improve profitability through efficient operations and strategic solutions.",
+      title: "Boost Profitability",
+      description: "Over the past several years we have built a reputation of providing unparalleled service to our clients, increasing revenue and ensuring financial success.",
     },
     {
-      title: "Transparent Process",
-      description: "Every step is documented and communicated. You understand what we're doing and why.",
+      title: "Assistance & Support",
+      description: "Each step of the process is kept transparent. We have the expertise to assist you with technical support or advice on the best solutions.",
     },
     {
-      title: "Cost-Effective Solutions",
-      description: "Professional services at competitive rates. We deliver value without compromising quality.",
+      title: "One-Stop Marketing Resource",
+      description: "We help you market better, reach more prospects, and expand your business with cost-effective, strategic solutions.",
     },
   ];
 
   const processSteps = ["Analysis", "Strategy", "Implementation", "Reporting", "Success"];
-
-  const faqItems = [
-    {
-      question: "What is Business Process Outsourcing (BPO)?",
-      answer: "BPO involves contracting specific business processes to external service providers. This allows companies to focus on core activities while we handle specialized functions.",
-    },
-    {
-      question: "How much do your services cost?",
-      answer: "Pricing depends on service type, volume, and complexity. We provide customized quotes after understanding your specific needs.",
-    },
-    {
-      question: "What industries do you serve?",
-      answer: "We serve diverse industries including technology, e-commerce, healthcare, real estate, and financial services.",
-    },
-    {
-      question: "How do you ensure quality?",
-      answer: "We maintain quality through regular training, performance monitoring, and continuous improvement processes.",
-    },
-    {
-      question: "Can you scale services as we grow?",
-      answer: "Yes. Our infrastructure supports scaling from small projects to large-scale operations.",
-    },
-    {
-      question: "What is your experience?",
-      answer: "We have 10+ years of BPO experience serving 50+ global clients across multiple industries.",
-    },
-  ];
-
-  const caseStudies = [
-    {
-      title: "E-commerce Platform",
-      result: "40% improvement in customer satisfaction",
-      description: "Implemented comprehensive customer support system",
-    },
-    {
-      title: "Tech Startup",
-      result: "3x revenue growth in 12 months",
-      description: "Digital marketing and lead generation services",
-    },
-    {
-      title: "Real Estate Agency",
-      result: "50% reduction in administrative time",
-      description: "Virtual assistant and back-office support",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -149,20 +97,14 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
         <div className="container flex items-center justify-between h-16 md:h-20">
           <a href="#" className="flex items-center gap-2 hover:opacity-80 transition">
-            <img src="/images/orca-logo.png" alt="Orca BPO - Business Process Outsourcing Solutions" className="h-12 w-auto" />
+            <img src="/images/orca-logo.png" alt="Orca BPO Logo" className="h-12 w-auto" />
           </a>
           <div className="hidden md:flex items-center gap-8">
             <a href="#services" className="text-sm font-medium hover:text-primary transition">Services</a>
             <a href="#about" className="text-sm font-medium hover:text-primary transition">About</a>
-            <a href="#faq" className="text-sm font-medium hover:text-primary transition">FAQ</a>
             <a href="#contact" className="text-sm font-medium hover:text-primary transition">Contact</a>
           </div>
-          <button 
-            className="md:hidden p-2 hover:bg-primary/10 rounded-lg transition" 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
-            aria-expanded={mobileMenuOpen}
-          >
+          <button className="md:hidden p-2 hover:bg-primary/10 rounded-lg transition" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
             {mobileMenuOpen ? <X className="w-6 h-6 text-primary" /> : <Menu className="w-6 h-6" />}
           </button>
           <Button className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white">Get Started</Button>
@@ -172,7 +114,6 @@ export default function Home() {
             <div className="container py-4 flex flex-col gap-4">
               <a href="#services" className="text-sm font-medium hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Services</a>
               <a href="#about" className="text-sm font-medium hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>About</a>
-              <a href="#faq" className="text-sm font-medium hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
               <a href="#contact" className="text-sm font-medium hover:text-primary transition py-2" onClick={() => setMobileMenuOpen(false)}>Contact</a>
               <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-2">Get Started</Button>
             </div>
@@ -195,34 +136,18 @@ export default function Home() {
         <div className="container relative z-10 py-20 md:py-32">
           <div className="max-w-2xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Professional BPO Services for Business Growth
+              Intelligent Solutions to Help Your Business <span className="text-primary">Leap Into Success</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
-              Orca BPO provides business process outsourcing and digital agency services. We serve 50+ global clients with software development, digital marketing, customer support, and specialized business solutions.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+              BPO Orca Enterprises provides thorough, detailed, and customer-oriented services as a leading provider of business process outsourcing. We're committed to providing the best solutions to help you navigate the digital world.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white group">
                 Get Started <ArrowRight className="ml-2 group-hover:translate-x-1 transition" />
               </Button>
               <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 Learn More
               </Button>
-            </div>
-            
-            {/* Key Statistics */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-              <div>
-                <p className="text-3xl font-bold text-primary">50+</p>
-                <p className="text-sm text-muted-foreground">Global Clients</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-primary">10+</p>
-                <p className="text-sm text-muted-foreground">Years Experience</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-primary">6</p>
-                <p className="text-sm text-muted-foreground">Core Services</p>
-              </div>
             </div>
           </div>
         </div>
@@ -241,9 +166,9 @@ export default function Home() {
       <section id="services" className="py-20 md:py-32 bg-gradient-to-b from-background to-card/30">
         <div className="container">
           <div className="max-w-3xl mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Business Process Outsourcing Services</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">How Do We Add Value?</h2>
             <p className="text-lg text-muted-foreground">
-              We provide specialized BPO and digital agency services. Each service is designed to solve specific business challenges and improve operational efficiency.
+              Embrace the future of digital services by partnering with our experienced professionals. We deliver comprehensive solutions across multiple domains.
             </p>
           </div>
 
@@ -253,25 +178,14 @@ export default function Home() {
               return (
                 <Card
                   key={index}
-                  id={service.link.substring(1)}
                   className="group bg-card hover:bg-card/80 border-border hover:border-primary/50 transition-all duration-300 p-8 cursor-pointer hover:shadow-lg hover:shadow-primary/20"
-                  role="article"
-                  aria-label={`${service.title} service`}
                 >
                   <div className="mb-6 inline-block p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed text-sm">{service.description}</p>
-                  <ul className="space-y-2 mb-6">
-                    {service.benefits.map((benefit, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                        {benefit}
-                      </li>
-                    ))}
-                  </ul>
-                  <a href={service.link} className="inline-flex items-center text-primary hover:gap-2 transition-all text-sm font-medium">
+                  <p className="text-muted-foreground mb-4 leading-relaxed">{service.description}</p>
+                  <a href={service.link} className="inline-flex items-center text-primary hover:gap-2 transition-all">
                     Learn More <ArrowRight className="w-4 h-4 ml-2" />
                   </a>
                 </Card>
@@ -291,21 +205,112 @@ export default function Home() {
                   <CarouselItem>
                     <img
                       src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/SWcDbQmxYtpEFXVP.jpg"
-                      alt="Orca BPO team providing customer support services"
+                      alt="Team at work - Customer support"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
                       src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/ByROIEDOtcifGQUC.jpg"
-                      alt="Team collaboration in Orca BPO office"
+                      alt="Team collaboration and innovation"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img
                       src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/PWXQIRFETHuSEASG.jpg"
-                      alt="Team discussion and business planning session"
+                      alt="Team discussion and planning"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/MlOqSRcIiUSgdoWh.jpg"
+                      alt="Team working together"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/NPYERevaVXIiBFYH.jpg"
+                      alt="Call center operations"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/LKoqWRrIKtQglYGW.jpg"
+                      alt="Team members collaborating with laptop"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9425.jpg"
+                      alt="Busy office call center environment"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9420.jpg"
+                      alt="Employee working with headset"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/HYhikZkMSCotDkYN.jpg"
+                      alt="Customer service representative smiling"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9410.jpg"
+                      alt="Training session with multiple employees"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9405.jpg"
+                      alt="Team meeting and discussion"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9400.jpg"
+                      alt="Female employee working with headset"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9395.jpg"
+                      alt="Team gathered around laptop for discussion"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9390.jpg"
+                      alt="Collaborative learning session"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/ziQGwKdrUyZIbTSn.jpg"
+                      alt="Revup office workspace"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="/images/093a9380.jpg"
+                      alt="Active workplace with focused employees"
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
@@ -316,26 +321,18 @@ export default function Home() {
             </div>
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                About Orca BPO
+                Celebrating More Than <span className="text-primary">10 Years of Impact</span>
               </h2>
-              
-              <h3 className="text-2xl font-bold mb-4 text-primary">Company Overview</h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Orca BPO is a professional business process outsourcing and digital agency based in Islamabad, Pakistan. We provide integrated customer experience and agency solutions to businesses worldwide.
+                At Orca BPO, we are dedicated to providing exceptional customer support and engagement solutions. Our mission is to be the leading provider in Islamabad, setting new standards in sales with reliable, cost-effective services across various industries.
               </p>
 
-              <h3 className="text-2xl font-bold mb-4 text-primary">Our Experience</h3>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Founded in 2014, we have 10+ years of experience serving 50+ global clients. Our team of professionals handles complex business processes with expertise and attention to detail.
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4 text-primary">What We Deliver</h3>
               <div className="space-y-4 mb-8">
                 {valueProps.map((prop, index) => (
                   <div key={index} className="flex gap-4">
                     <div className="flex-shrink-0 w-1 bg-primary rounded-full" />
                     <div>
-                      <h4 className="font-bold text-lg mb-2">{prop.title}</h4>
+                      <h3 className="font-bold text-lg mb-2">{prop.title}</h3>
                       <p className="text-muted-foreground">{prop.description}</p>
                     </div>
                   </div>
@@ -372,39 +369,15 @@ export default function Home() {
           </div>
 
           <div className="mt-16 bg-card border border-border rounded-lg p-8 md:p-12">
-            <h3 className="text-2xl font-bold mb-4">How Our Process Works</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              We begin by analyzing your business, products, and competitive landscape. Understanding your specific needs allows us to develop targeted solutions.
-            </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our strategic approach focuses on sustainable growth through data-driven decisions and continuous optimization.
+              Once you choose Orca BPO as your service provider, we begin by analyzing your website, products, business, and competitors. The more we know about your business, the better we can serve you. Analyzing the market and building a buyer persona are crucial to promoting your brand effectively and achieving sustainable growth.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Case Studies Section */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16">Client Success Stories</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {caseStudies.map((study, index) => (
-              <Card key={index} className="bg-card border-border p-8">
-                <div className="mb-4 inline-block p-3 bg-primary/10 rounded-lg">
-                  <TrendingUp className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">{study.title}</h3>
-                <p className="text-2xl font-bold text-primary mb-4">{study.result}</p>
-                <p className="text-muted-foreground">{study.description}</p>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-card/30">
+      <section className="py-20 md:py-32 bg-background">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -416,7 +389,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-2xl md:text-3xl font-bold mb-6 leading-relaxed">
-                  Having worked with multiple SEO agencies, Orca BPO stands out as the best. Their work improved our conversion rates significantly.
+                  Having worked with probably three SEO agencies so far, BPO Orca Enterprises stands out as the best. Their contribution has helped us improve conversion rates by making broader business strategy changes.
                 </p>
                 <div>
                   <p className="text-lg text-primary font-bold">Paul Andrew</p>
@@ -429,7 +402,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl blur-3xl"></div>
                   <img
                     src="/images/paul-andrew.png"
-                    alt="Paul Andrew - Client testimonial for Orca BPO"
+                    alt="Paul Andrew - Client Testimonial"
                     className="relative w-full max-w-sm rounded-2xl shadow-2xl object-cover"
                   />
                 </div>
@@ -449,7 +422,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl blur-3xl"></div>
                 <img
                   src="/images/ceo.jpg"
-                  alt="CEO of Orca BPO - Leadership"
+                  alt="CEO of Orca BPO"
                   className="relative w-full max-w-sm rounded-2xl shadow-2xl object-cover"
                 />
               </div>
@@ -461,55 +434,24 @@ export default function Home() {
                 <span className="text-sm font-bold text-primary uppercase tracking-widest">Leadership</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Meet Our CEO
+                Meet Our <span className="text-primary">Visionary Leader</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our CEO brings years of industry expertise and a commitment to delivering excellent results. He leads Orca BPO with a focus on customer success and innovation.
+                With years of industry expertise and a passion for excellence, our CEO leads Orca BPO with a clear vision: to transform businesses through innovative solutions and customer-centric service delivery.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Under his leadership, Orca BPO has become a trusted partner for companies seeking professional BPO and digital agency services.
+                Under his strategic direction, Orca BPO has grown to become a trusted partner for companies seeking integrated customer experience and agency solutions. His commitment to quality, innovation, and client success drives every decision we make.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Connect With Leadership
-              </Button>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <p className="font-bold text-xl mb-1">CEO, Orca BPO</p>
+                  <p className="text-muted-foreground">Founder & Visionary</p>
+                </div>
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white w-fit">
+                  Connect With Leadership
+                </Button>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section id="faq" className="py-20 md:py-32 bg-background">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">Frequently Asked Questions</h2>
-            <p className="text-lg text-muted-foreground text-center mb-16">
-              Find answers to common questions about our BPO services and how we can help your business.
-            </p>
-
-            <div className="space-y-6">
-              {faqItems.map((item, index) => (
-                <Card key={index} className="bg-card border-border p-8">
-                  <h3 className="text-xl font-bold mb-4">{item.question}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{item.answer}</p>
-                </Card>
-              ))}
-            </div>
-
-            {/* FAQ Schema */}
-            <script type="application/ld+json">
-              {JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": faqItems.map(item => ({
-                  "@type": "Question",
-                  "name": item.question,
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": item.answer
-                  }
-                }))
-              })}
-            </script>
           </div>
         </div>
       </section>
@@ -518,10 +460,10 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-gradient-to-r from-primary/20 via-primary/10 to-background border-t border-primary/20">
         <div className="container text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Grow Your Business?
+            You Have the <span className="text-primary">VISION</span>, We Know the <span className="text-primary">WAY</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let us help you achieve sustainable growth with our professional BPO and digital agency services.
+            Often, businesses miss clues about their future success. Let us help you achieve sustainable growth with our sales and marketing solutions.
           </p>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
             Start Your Journey Today
@@ -547,7 +489,7 @@ export default function Home() {
                   <div>
                     <p className="font-bold mb-1">Office Address</p>
                     <p className="text-muted-foreground">
-                      Office No. 5, 2nd Floor, Muzafar Chamber, Near Tehzeeb Bakery, Blue Area, Islamabad, Pakistan 44000
+                      Office No. 5, 2nd Floor, Muzafar Chamber, Near Tehzeeb Bakery, Blue Area, Islamabad, Pakistan
                     </p>
                   </div>
                 </div>
@@ -692,38 +634,37 @@ export default function Home() {
             <div>
               <img src="/images/orca-logo.png" alt="Orca BPO Logo" className="h-16 w-auto mb-4" />
               <p className="text-muted-foreground text-sm">
-                Professional BPO and digital agency services for business growth.
+                Leading provider of integrated customer experience and agency solutions.
               </p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Services</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#software-development" className="hover:text-primary transition">Software Development</a></li>
-                <li><a href="#digital-marketing" className="hover:text-primary transition">Digital Marketing</a></li>
-                <li><a href="#customer-experience" className="hover:text-primary transition">Customer Experience</a></li>
-                <li><a href="#seo-optimization" className="hover:text-primary transition">SEO Optimization</a></li>
+                <li><a href="#" className="hover:text-primary transition">Software Development</a></li>
+                <li><a href="#" className="hover:text-primary transition">Digital Marketing</a></li>
+                <li><a href="#" className="hover:text-primary transition">Customer Experience</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#about" className="hover:text-primary transition">About Us</a></li>
-                <li><a href="#faq" className="hover:text-primary transition">FAQ</a></li>
-                <li><a href="#contact" className="hover:text-primary transition">Contact</a></li>
+                <li><a href="#" className="hover:text-primary transition">About Us</a></li>
+                <li><a href="#" className="hover:text-primary transition">Our Team</a></li>
+                <li><a href="#" className="hover:text-primary transition">Careers</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">Legal</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/privacy" className="hover:text-primary transition">Privacy Policy</a></li>
-                <li><a href="/terms" className="hover:text-primary transition">Terms & Conditions</a></li>
+                <li><a href="#" className="hover:text-primary transition">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-primary transition">Terms & Conditions</a></li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm">
-              © 2024 Orca BPO. All rights reserved.
+              © 2024 BPO Orca Enterprises. All rights reserved.
             </p>
             <div className="flex gap-4 mt-4 md:mt-0">
               <a

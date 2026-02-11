@@ -4,8 +4,9 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { lazy, Suspense } from "react";
 import Home from "./pages/Home";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 // Performance: Preload critical resources
 if (typeof window !== "undefined") {
@@ -16,17 +17,16 @@ if (typeof window !== "undefined") {
   document.head.appendChild(link);
 }
 
-
 function Router() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-background" />}>
-      <Switch>
-        <Route path={"/"} component={Home} />
-        <Route path={"/404"} component={NotFound} />
-        {/* Final fallback route */}
-        <Route component={NotFound} />
-      </Switch>
-    </Suspense>
+    <Switch>
+      <Route path={"/"} component={Home} />
+      <Route path={"/privacy"} component={Privacy} />
+      <Route path={"/terms"} component={Terms} />
+      <Route path={"/404"} component={NotFound} />
+      {/* Final fallback route */}
+      <Route component={NotFound} />
+    </Switch>
   );
 }
 
