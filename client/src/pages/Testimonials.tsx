@@ -12,7 +12,7 @@ export default function Testimonials() {
       company: "Tech Innovations Inc.",
       rating: 5,
       quote: "Having worked with probably three SEO agencies so far, BPO Orca Enterprises stands out as the best. Their contribution has helped us improve conversion rates by making broader business strategy changes.",
-      image: "/images/testimonial-paul.jpg",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/EEYnHmvziAIIaZap.JPG",
       metrics: "40% improvement in conversions"
     },
     {
@@ -22,7 +22,7 @@ export default function Testimonials() {
       company: "Global Solutions Ltd.",
       rating: 5,
       quote: "The team at Orca BPO is professional, responsive, and delivers results. Their digital marketing strategies have significantly increased our online visibility and customer engagement.",
-      image: "/images/testimonial-sarah.jpg",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/vpQqpxjBxVxdHphd.JPG",
       metrics: "3x increase in leads"
     },
     {
@@ -32,7 +32,7 @@ export default function Testimonials() {
       company: "E-Commerce Plus",
       rating: 5,
       quote: "Excellent customer support service. The team handles our customer interactions with professionalism and care. Response times are quick and customer satisfaction has improved dramatically.",
-      image: "/images/testimonial-michael.jpg",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/lzpAMXzpXimclDIT.JPG",
       metrics: "95% customer satisfaction"
     },
     {
@@ -42,7 +42,7 @@ export default function Testimonials() {
       company: "Creative Agency Co.",
       rating: 5,
       quote: "Outstanding branding work. Orca BPO helped us develop a cohesive brand identity that resonates with our target audience. Their strategic approach is refreshing and results-driven.",
-      image: "/images/testimonial-emma.jpg",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/ATaMFzdzWhgHEZld.JPG",
       metrics: "50% brand recognition increase"
     },
     {
@@ -52,7 +52,7 @@ export default function Testimonials() {
       company: "StartUp Ventures",
       rating: 5,
       quote: "Their software development team is top-notch. They built our entire platform from scratch with clean code, great architecture, and delivered on time. Highly recommended.",
-      image: "/images/testimonial-david.jpg",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/fnLRkCUVSXWjNwdd.JPG",
       metrics: "Project delivered 2 weeks early"
     },
     {
@@ -62,7 +62,7 @@ export default function Testimonials() {
       company: "Premier Properties",
       rating: 5,
       quote: "The Real Estate VA service has been a game-changer for my business. They handle all the administrative tasks efficiently, allowing me to focus on closing deals. Worth every penny.",
-      image: "/images/testimonial-lisa.jpg",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/EEYnHmvziAIIaZap.JPG",
       metrics: "20 hours saved per week"
     }
   ];

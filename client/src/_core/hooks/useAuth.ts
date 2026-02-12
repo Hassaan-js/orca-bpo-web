@@ -9,9 +9,13 @@ type UseAuthOptions = {
 };
 
 export function useAuth(options?: UseAuthOptions) {
-  const { redirectOnUnauthenticated = false, redirectPath = getLoginUrl() } =
+  const { redirectOnUnauthenticated = false, redirectPath } =
     options ?? {};
   const utils = trpc.useUtils();
+  const loginUrl = useMemo(() => {
+    if (typeof window === 'undefined') return '';
+    return getLoginUrl();
+  }, []);
 
   const meQuery = trpc.auth.me.useQuery(undefined, {
     retry: false,
@@ -65,12 +69,14 @@ export function useAuth(options?: UseAuthOptions) {
     if (meQuery.isLoading || logoutMutation.isPending) return;
     if (state.user) return;
     if (typeof window === "undefined") return;
-    if (window.location.pathname === redirectPath) return;
+    const finalRedirectPath = redirectPath || loginUrl;
+    if (window.location.pathname === finalRedirectPath) return;
 
-    window.location.href = redirectPath
+    window.location.href = finalRedirectPath
   }, [
     redirectOnUnauthenticated,
     redirectPath,
+    loginUrl,
     logoutMutation.isPending,
     meQuery.isLoading,
     state.user,
