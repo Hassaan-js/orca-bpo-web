@@ -16,8 +16,8 @@ if (typeof window !== "undefined") {
   link.href = "/images/orca-logo.png";
   document.head.appendChild(link);
 }
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
