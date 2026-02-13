@@ -141,12 +141,21 @@ export default function About() {
       <section className="py-16 px-4 bg-slate-800/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">Our Team</h2>
-          <div className="flex justify-center">
-            <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/OEDRYpUXNmzhjgom.JPG" 
-              alt="Orca BPO Team - Professional developers and consultants collaborating" 
-              className="rounded-lg shadow-2xl max-w-4xl w-full object-cover"
-            />
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="flex justify-center">
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/OEDRYpUXNmzhjgom.JPG" 
+                alt="Orca BPO Team - Professional developers and consultants collaborating" 
+                className="rounded-lg shadow-2xl w-full object-cover"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/afSBWYBNWcPamvrF.JPG" 
+                alt="Orca BPO Team - Developers working together on laptops" 
+                className="rounded-lg shadow-2xl w-full object-cover"
+              />
+            </div>
           </div>
           <p className="text-center text-slate-300 mt-8 text-lg">Our talented team of 100+ professionals is dedicated to delivering excellence and driving your business growth.</p>
         </div>
