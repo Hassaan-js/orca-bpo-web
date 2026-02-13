@@ -309,6 +309,20 @@ export default function Home() {
                       className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
                     />
                   </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/OEDRYpUXNmzhjgom.JPG"
+                      alt="Orca BPO team members collaborating on projects"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/afSBWYBNWcPamvrF.JPG"
+                      alt="Developers working together on laptops at Orca BPO"
+                      className="w-full h-96 object-cover rounded-lg shadow-2xl shadow-primary/20"
+                    />
+                  </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2" />
                 <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2" />
