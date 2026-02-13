@@ -463,11 +463,51 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Meet Our CEO
               </h2>
+              <h3 className="text-2xl font-bold text-primary mb-4">Raja Sheeraz Kiani</h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Our CEO brings years of industry expertise and a commitment to delivering excellent results. He leads Orca BPO with a focus on customer success and innovation.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Under his leadership, Orca BPO has become a trusted partner for companies seeking professional BPO and digital agency services.
+              </p>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                Connect With Leadership
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Director of Operations Section */}
+      <section className="py-20 md:py-32 bg-background border-t border-border">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Director Image */}
+            <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10 rounded-2xl blur-3xl"></div>
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663236399068/wTHpLkCbwhyOUXLn.png"
+                  alt="Raja Wahab Kiani - Director of Operations at Orca BPO"
+                  className="relative w-full max-w-sm rounded-2xl shadow-2xl object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Director Bio */}
+            <div className="order-1 lg:order-2">
+              <div className="mb-6">
+                <span className="text-sm font-bold text-primary uppercase tracking-widest">Leadership</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Meet Our Director of Operations
+              </h2>
+              <h3 className="text-2xl font-bold text-primary mb-4">Raja Wahab Kiani</h3>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Our Director of Operations ensures excellence in every project. With extensive experience in process optimization and team management, Raja Wahab drives operational efficiency across all departments.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                His strategic approach to operations has enabled Orca BPO to scale effectively while maintaining the highest quality standards for our clients.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
                 Connect With Leadership
