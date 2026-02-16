@@ -484,8 +484,13 @@ export default function Home() {
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Under his leadership, Orca BPO has become a trusted partner for companies seeking professional BPO and digital agency services.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Connect With Leadership
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                <a
+                  href="mailto:info@orca.com.pk?subject=Leadership%20Inquiry"
+                  aria-label="Email Orca BPO leadership"
+                >
+                  Connect With Leadership
+                </a>
               </Button>
             </div>
           </div>
@@ -523,8 +528,13 @@ export default function Home() {
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 His strategic approach to operations has enabled Orca BPO to scale effectively while maintaining the highest quality standards for our clients.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Connect With Leadership
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                <a
+                  href="mailto:info@orca.com.pk?subject=Leadership%20Inquiry"
+                  aria-label="Email Orca BPO leadership"
+                >
+                  Connect With Leadership
+                </a>
               </Button>
             </div>
           </div>
